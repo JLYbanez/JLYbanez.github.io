@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge Ybañez - Unity Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jorge Ybañez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jorge Ybañez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="section__pic-container__profile-picture" src="./assets/profile-pic.png" alt="Jorge Ybañez profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jorge Ybañez</h1>
+        <p class="section__text__p2">Unity Game Developer</p>
+        <div class="btn-container">
+          <a href="./assets/Jorge Ybanez.pdf" download>
+            <button class="btn btn-color-2">Download CV</button>
+          </a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+<!--        <div id="socials-container">-->
+<!--          <img-->
+<!--            src="./assets/linkedin.png"-->
+<!--            alt="My LinkedIn profile"-->
+<!--            class="icon"-->
+<!--            onclick="location.href='https://www.linkedin.com/in/jorge-ybanez/'"-->
+<!--          />-->
+<!--        </div>-->
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic-2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Experience</h3>
+              <p>9+ years <br />Game Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Universidad Caece Mar del Plata </br> Systems Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an experienced game developer with a passion for crafting new and engaging gameplay mechanics. With over 9 years of experience, I've led teams, tackled tight deadlines, and fostered smooth collaborations with external partners. I've also had the privilege of serving as a CTO for BoxitSoft, where I focused on managing resources, defining project architectures, and streamlining company-wide processes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-header">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>ShaderLab / Cg</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS3/Sass</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container-header">
+            <h2 class="experience-sub-title">Engines / Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Unity 3D</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Cocos2D</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Marmalade</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>React Native</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+            </div>
+
+          </div>
+          <div class="details-container-header">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Git & Github / GitLab / BitBucket</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Jira / Asana / Trello</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Photoshop / Illustrator</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Premiere Pro / DaVinci Resolve</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Audacity</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>ChatGPT / MidJourney</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container-header">
+            <h2 class="experience-sub-title">Fields</h2>
+            <div class="article-container">
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Gameplay</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Editor Tools</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Shaders</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Scripting</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>UI Design</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Level Design</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      
+      <p class="section__text__p1">Check My Latest</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Tatsuki Manor Mystery', 
+     'Developed within a tight four-week timeframe, from August 13, 2023, to September 2, 2023, this project was created for the well-known streamer, Selen Tatsuki. As the team leader, I handled several aspects of the project, including programming, game design, and UI design, as well as the publishing process. With a team of talented artists under my guidance, we successfully delivered a high-quality product without sacrificing its scope, resulting in satisfied fans and gaining significant positive attention.', 
+     'assets/games/tatskmanor.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/tatskmanor_thumb.png"
+                      alt="Tatsuki Manor Mystery"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tatsuki Manor Mystery</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://selentatsuki.itch.io/tatsuki-manor-mystery'); event.stopPropagation();"
+              >
+                <i class="fab fa-itch-io"></i> Itch.io
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('5 Minute Hero', 
+     'A personal solo project started as a proof of concept. It features roguelite gameplay similar to &quot;Vampire Survivors&quot;. The objective was to establish an adaptable framework for efficiently creating such games while maintaining high performance when rendering hundreds of 3D units on-screen.', 
+     'assets/games/5min.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/5min_thumb.png"
+                      alt="5 Minute Hero"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              5 Minute Hero
+            </h2>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Dungeon Slayer', 
+     '&quot;Dungeon Slayer&quot; was a project developed by More Mana Games. I was responsible for the entire game development process, including programming, UI design, graphic integration, and level design. The game blends classic ARPG mechanics with features from hybrid casual games.', 
+     'assets/games/dslayer.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/dslayer_thumb.png"
+                      alt="Dungeon Slayer"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dungeon Slayer</h2>
+            <div class="btn-container">
+              <!-- Add your buttons or links here as needed -->
+            </div>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Harvest It!', 
+     'Developed for Homa Games, &quot;Harvest It!&quot; marked the first successful internal prototype, meeting the necessary KPIs for integration into the main account. Achieving this milestone required a lot of iteration and discarded prototypes. The initial versions were developed by me alone, later joined by an artist and game designer.', 
+     'assets/games/harvest-it.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/harvest-it_thumb.png"
+                      alt="Harvest It!"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Harvest It!</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/harvest-it/id1537088062'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-apple"></i> App Store
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://play.google.com/store/apps/details?id=com.nagastudio.farmdude'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Attack On Giants', 
+     '&quot;Attack On Giants&quot; became my second hit prototype for Homa Games, achieving an impressive $0.13 CPI campaign after just 2 weeks of development. The initial prototype, featured in the video, was my personal favorite, boasting straightforward, simpler mechanics based on fast movement and flashy slicing animations. I was in charge of the programming as usual, but also made most of the visuals for this iteration.', 
+     'assets/games/aog.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/aog_thumb.png"
+                      alt="Attack On Giants"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Attack On Giants</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/ca/app/attack-on-giants-giant-slayer/id1563198303'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-apple"></i> App Store
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://play.google.com/store/apps/details?id=com.nagastudio.attack.titan'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" 
+               onclick="openProjectPopup('Zombie Squad', 
+               'Zombie Squad was one of my earliest ventures in game development using Unity. As the sole programmer behind the project, I crafted all of the in-game mechanics from the ground up, without relying on third-party libraries. Notably, the game featured a custom-made dynamic lightprobe system, a technical achievement that I\'m still proud of to this day.', 
+               'assets/games/zsquad.mp4')">
+            <div class="article-container">
+              <img
+                src="./assets/games/zsquad_thumb.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Zombie Squad</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.mastercomlimited.zombiedrive'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Bus Rush 2', 
+     'Bus Rush 2, a project developed for Play365 (previously BoxitGames) was the sequel to the previous big success Bus Rush, with several improvements to gameplay. I took the role of lead developer and project manager, leading a team of up to 3 developers as well as several 3D and 2D artists and designers. All the mechanics for the game were done from scratch without use of 3rd party libraries. The game featured a Real Time Multiplayer mode, with region-based matchmaking using Amazon GameLift FlexMatch.', 
+     'assets/games/br2.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/br2_thumb.png"
+                      alt="Bus Rush 2"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bus Rush 2</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://play.google.com/store/apps/details?id=com.playappking.busrush2'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/bus-rush-2/id1297942874'); event.stopPropagation();"
+              >
+                <i class="fa-brands fa-apple"></i> App Store
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container"
+               onclick="openProjectPopup('Snake Legends', 
+     'Snake Legends was a very simple game, but it has a special place in my heart. It was one of the first games I made, born from the initiative of a small team that poured a lot of passion into it. I took the role of lead developer and helped come up with the different twists and mechanics we added to the classic Snake gameplay formula.', 
+     'assets/games/snake.mp4')">
+            <div class="article-container">
+              <img
+                      src="./assets/games/snake_thumb.png"
+                      alt="Snake Legends"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Legends</h2>
+            <div class="btn-container">
+              <!-- Add any buttons or links as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jorgeluisybanez@gmail.com">jorgeluisybanez@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jorge-ybanez/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jorge Ybañez. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+    <div class="project-popup" id="project-popup">
+      <div class="project-popup-content" id="project-popup-content">
+        
+      </div>
+    </div>
+
+  </body>
+</html>
